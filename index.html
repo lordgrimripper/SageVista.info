@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/jpg" href="favicon.png">
+    <title>SageVista – Gyaan with the Right Path</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="text-gray-800">
+
+    <header class="bg-white shadow-lg sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="logo flex items-center space-x-2">
+                <img src="sagevista_logo.jpeg" alt="SageVista Logo" class="w-10 h-10">
+                <a href="#" class="text-2xl md:text-3xl font-bold text-sagevista">SageVista</a>
+            </div>
+            <div class="md:hidden">
+                <button id="menu-btn" class="text-gray-600 focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+            <div id="nav-menu" class="hidden md:flex flex-col md:flex-row md:items-center md:space-x-8 mt-4 md:mt-0">
+                <a href="#Home" class="block py-2 px-4 text-center md:text-left text-gray-700 hover:text-sagevista rounded-lg transition-colors duration-300">Home</a>
+                <a href="#services" class="block py-2 px-4 text-center md:text-left text-gray-700 hover:text-sagevista rounded-lg transition-colors duration-300">Services</a>
+                <a href="#about" class="block py-2 px-4 text-center md:text-left text-gray-700 hover:text-sagevista rounded-lg transition-colors duration-300">About</a>
+                <a href="#jobs" class="block py-2 px-4 text-center md:text-left text-gray-700 hover:text-sagevista rounded-lg transition-colors duration-300">Jobs</a>
+                <a href="#testimonials" class="block py-2 px-4 text-center md:text-left text-gray-700 hover:text-sagevista rounded-lg transition-colors duration-300">Testimonials</a>
+                <a href="#contact" class="block py-2 px-4 text-center md:text-left text-gray-700 hover:text-sagevista rounded-lg transition-colors duration-300">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="Home" class="relative bg-gradient-to-br from-[#0D47A1] to-[#1565C0] text-white py-20 md:py-32 overflow-hidden">
+            <div class="container mx-auto px-6 text-center">
+                <div class="flex flex-col md:flex-row items-center justify-center space-y-8 md:space-y-0 md:space-x-12">
+                    <img src="sagevista_logo.jpeg" alt="SageVista Consultancy" class="w-48 h-48 md:w-64 md:h-64 rounded-full shadow-xl transform hover:scale-105 transition-transform duration-300">
+                    <div>
+                        <h2 class="text-2xl md:text-3xl font-semibold opacity-80">Welcome to</h2>
+                        <h1 class="text-4xl md:text-6xl font-bold mt-2">SageVista</h1>
+                        <p class="text-lg md:text-xl mt-4 opacity-90 max-w-2xl mx-auto">Gyaan with the Right Path – Your trusted partner in professional job consultancy and career guidance.</p>
+                        <div class="mt-8 flex justify-center space-x-4">
+                            <a href="#jobs" class="bg-gold text-white px-6 py-3 rounded-full font-semibold shadow-lg hover:bg-[#E3B652] transition-all duration-300">Find Jobs</a>
+                            <a href="#contact" class="bg-transparent border-2 border-white text-white px-6 py-3 rounded-full font-semibold hover:bg-white hover:text-[#0D47A1] transition-all duration-300">Partner with Us</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="py-16 bg-gray-50">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-sagevista">Our Services</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="bg-white p-8 rounded-xl shadow-lg border-b-4 border-sagevista hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                        <div class="flex justify-center mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-16 h-16 text-sagevista">
+                                <path d="M11.5 21a.5.5 0 01-.47-.282L7.545 13H3.5a.5.5 0 010-1h4.045L11.03 4.282A.5.5 0 0111.5 4h1a.5.5 0 01.47.282L16.455 12h4.045a.5.5 0 010 1h-4.045l-3.485 7.718A.5.5 0 0112.5 21h-1zM12 5.5l2.455 5.5H9.545L12 5.5zm1 14.718L9.545 14H16.455L13 20.218z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-sagevista mb-2">Job Placement</h3>
+                        <p class="text-gray-600">Helping candidates find the right roles tailored to their skills and career aspirations.</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-xl shadow-lg border-b-4 border-sagevista hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                        <div class="flex justify-center mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-16 h-16 text-sagevista">
+                                <path d="M12 21a9 9 0 100-18 9 9 0 000 18zM12 5a7 7 0 110 14 7 7 0 010-14zm0 2a5 5 0 100 10 5 5 0 000-10zm0 2a3 3 0 110 6 3 3 0 010-6zm0 2a1 1 0 100 2 1 1 0 000-2z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-sagevista mb-2">Recruitment Solutions</h3>
+                        <p class="text-gray-600">Connecting businesses with the best talent quickly and efficiently, ensuring a perfect match.</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-xl shadow-lg border-b-4 border-sagevista hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                        <div class="flex justify-center mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-16 h-16 text-sagevista">
+                                <path d="M12 21a9 9 0 100-18 9 9 0 000 18zM12 5a7 7 0 110 14 7 7 0 010-14zM12 7a5 5 0 100 10 5 5 0 000-10z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-sagevista mb-2">Career Guidance</h3>
+                        <p class="text-gray-600">Providing expert advice on resume building, interview coaching, and long-term career planning.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="py-16 bg-white">
+            <div class="container mx-auto px-6 max-w-3xl">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-8 text-sagevista">About Us</h2>
+                <div class="text-lg text-gray-700 leading-relaxed space-y-6">
+                    <div>
+                        <h3 class="text-xl font-semibold text-sagevista mb-2">Our Story, Mission, and Vision</h3>
+                        <p>Founded on the principle of providing **"Gyaan with the Right Path,"** SageVista was created to bridge the gap between talented professionals and forward-thinking companies. Our mission is to provide clear, effective, and ethical job consultancy services that empower individuals to achieve their career goals and enable organizations to build exceptional teams. We envision a world where every professional finds a role that aligns with their purpose and every company finds the perfect talent to drive its success.</p>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold text-sagevista mb-2">What Makes Us Different</h3>
+                        <p>At SageVista, we stand apart by combining knowledge with direction — Gyaan with the Right Path. Unlike traditional consultancies, we don’t believe in one-size-fits-all solutions. Every candidate and employer receives personalized attention, guided by a logical and data-driven approach that ensures the right fit. Our focus goes beyond just filling vacancies; we emphasize clarity, transparency, and long-term growth. By building genuine relationships instead of quick transactions, we help professionals make informed career moves while enabling organizations to secure talent that truly adds value.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="jobs" class="py-16 bg-[#E3F2FD] border-t-4 border-b-4 border-sagevista">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-sagevista">Explore Our Job Opportunities</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <a href="#contact" class="job-category-link bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                        <h3 class="text-xl font-bold text-sagevista mb-2">IT & Software</h3>
+                        <p class="text-gray-600">Opportunities for software developers, data analysts, network engineers, and IT support professionals. We connect you with top tech companies seeking both freshers and experienced talent.</p>
+                    </a>
+                    <a href="#contact" class="job-category-link bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                        <h3 class="text-xl font-bold text-sagevista mb-2">Sales & Marketing</h3>
+                        <p class="text-gray-600">Find roles in digital marketing, field sales, business development, and brand management. From entry-level positions to senior management, we help you find your next career move in the dynamic world of sales and marketing.</p>
+                    </a>
+                    <a href="#contact" class="job-category-link bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                        <h3 class="text-xl font-bold text-sagevista mb-2">Finance & Accounting</h3>
+                        <p class="text-gray-600">Connect with leading financial institutions and corporate finance departments. We place professionals in roles such as finance analysts, accountants, auditors, and financial consultants.</p>
+                    </a>
+                    <a href="#contact" class="job-category-link bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                        <h3 class="text-xl font-bold text-sagevista mb-2">BPO / Call Centers</h3>
+                        <p class="text-gray-600">Explore opportunities in customer service, technical support, and BPO operations. We have openings for both domestic and international call centers, offering flexible work environments, including work-from-home options.</p>
+                    </a>
+                    <a href="#contact" class="job-category-link bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                        <h3 class="text-xl font-bold text-sagevista mb-2">Retail / Hospitality</h3>
+                        <p class="text-gray-600">Find exciting roles in the fast-paced retail and hospitality industries. Positions include store managers, retail associates, hotel staff, and other customer-facing roles.</p>
+                    </a>
+                    <a href="#contact" class="job-category-link bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                        <h3 class="text-xl font-bold text-sagevista mb-2">Logistics & Delivery</h3>
+                        <p class="text-gray-600">Join the growing logistics and e-commerce sector. We offer roles in supply chain management, warehouse operations, last-mile delivery, and inventory management for various companies.</p>
+                    </a>
+                    <a href="#contact" class="job-category-link bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                        <h3 class="text-xl font-bold text-sagevista mb-2">Education / Training</h3>
+                        <p class="text-gray-600">Shape the future by working in education and training. We have opportunities for educators, trainers, and curriculum developers in schools, colleges, and corporate training centers.</p>
+                    </a>
+                </div>
+                <div class="text-center mt-12">
+                    <a href="#contact" class="bg-gold text-white px-8 py-3 rounded-full font-semibold shadow-lg hover:bg-[#E3B652] transition-colors duration-300">View All Jobs</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonials" class="py-16 bg-white">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-sagevista">What Our Clients Say</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="bg-gray-50 p-6 rounded-xl shadow-md border border-gray-200">
+                        <div class="flex items-start mb-4">
+                            <svg class="w-8 h-8 text-sagevista mr-3" fill="currentColor" viewBox="0 0 24 24"><path d="M12 17.5l-2.45 1.83.91-2.92L7.25 13h3.04l.95-3.04L12 13h2.76l-2.21 1.41.91 2.92L12 17.5zm-5 4.5l-2.45 1.83.91-2.92L0.25 18h3.04l.95-3.04L5 18h2.76l-2.21 1.41.91 2.92L5 22zm10 0l-2.45 1.83.91-2.92L10.25 18h3.04l.95-3.04L15 18h2.76l-2.21 1.41.91 2.92L15 22z"></path></svg>
+                            <img class="w-16 h-16 rounded-full mr-4" src="1.jpeg" alt="Client Testimonial">
+                            <div>
+                                <h4 class="font-bold text-lg text-sagevista">Amit Kumar</h4>
+                                <p class="text-sm text-gray-500">Student & Freelancer</p>
+                            </div>
+                        </div>
+                        <p class="italic text-gray-700 leading-relaxed">"I found a reliable work-from-home job through SageVista. Now I can balance my studies and earnings easily."</p>
+                    </div>
+                    <div class="bg-gray-50 p-6 rounded-xl shadow-md border border-gray-200">
+                        <div class="flex items-start mb-4">
+                            <svg class="w-8 h-8 text-sagevista mr-3" fill="currentColor" viewBox="0 0 24 24"><path d="M12 17.5l-2.45 1.83.91-2.92L7.25 13h3.04l.95-3.04L12 13h2.76l-2.21 1.41.91 2.92L12 17.5zm-5 4.5l-2.45 1.83.91-2.92L0.25 18h3.04l.95-3.04L5 18h2.76l-2.21 1.41.91 2.92L5 22zm10 0l-2.45 1.83.91-2.92L10.25 18h3.04l.95-3.04L15 18h2.76l-2.21 1.41.91 2.92L15 22z"></path></svg>
+                            <span class="text-4xl mr-4">😃</span>
+                            <div>
+                                <h4 class="font-bold text-lg text-sagevista">Sneha Gupta</h4>
+                                <p class="text-sm text-gray-500">Graduate Trainee</p>
+                            </div>
+                        </div>
+                        <p class="italic text-gray-700 leading-relaxed">"I was struggling to find a good opportunity as a fresher, but SageVista gave me the breakthrough I needed."</p>
+                    </div>
+                    <div class="bg-gray-50 p-6 rounded-xl shadow-md border border-gray-200">
+                        <div class="flex items-start mb-4">
+                            <svg class="w-8 h-8 text-sagevista mr-3" fill="currentColor" viewBox="0 0 24 24"><path d="M12 17.5l-2.45 1.83.91-2.92L7.25 13h3.04l.95-3.04L12 13h2.76l-2.21 1.41.91 2.92L12 17.5zm-5 4.5l-2.45 1.83.91-2.92L0.25 18h3.04l.95-3.04L5 18h2.76l-2.21 1.41.91 2.92L5 22zm10 0l-2.45 1.83.91-2.92L10.25 18h3.04l.95-3.04L15 18h2.76l-2.21 1.41.91 2.92L15 22z"></path></svg>
+                            <img class="w-16 h-16 rounded-full mr-4" src="2.jpeg" alt="Client Testimonial">
+                            <div>
+                                <h4 class="font-bold text-lg text-sagevista">Aditya Tiwari</h4>
+                                <p class="text-sm text-gray-500">B.Sc Fresher</p>
+                            </div>
+                        </div>
+                        <p class="italic text-gray-700 leading-relaxed">"SageVista is the best platform for freshers like me. I got placed in my first job within two weeks of registering."</p>
+                    </div>
+                    <div class="bg-gray-50 p-6 rounded-xl shadow-md border border-gray-200">
+                        <div class="flex items-start mb-4">
+                            <svg class="w-8 h-8 text-sagevista mr-3" fill="currentColor" viewBox="0 0 24 24"><path d="M12 17.5l-2.45 1.83.91-2.92L7.25 13h3.04l.95-3.04L12 13h2.76l-2.21 1.41.91 2.92L12 17.5zm-5 4.5l-2.45 1.83.91-2.92L0.25 18h3.04l.95-3.04L5 18h2.76l-2.21 1.41.91 2.92L5 22zm10 0l-2.45 1.83.91-2.92L10.25 18h3.04l.95-3.04L15 18h2.76l-2.21 1.41.91 2.92L15 22z"></path></svg>
+                            <span class="text-4xl mr-4">🥳</span>
+                            <div>
+                                <h4 class="font-bold text-lg text-sagevista">Shreya Patel</h4>
+                                <p class="text-sm text-gray-500">MBA Fresher</p>
+                            </div>
+                        </div>
+                        <p class="italic text-gray-700 leading-relaxed">"I was worried about not having experience, but SageVista connected me with a company that was open to freshers like me. Now I am learning and growing every day."</p>
+                    </div>
+                    <div class="bg-gray-50 p-6 rounded-xl shadow-md border border-gray-200">
+                        <div class="flex items-start mb-4">
+                            <svg class="w-8 h-8 text-sagevista mr-3" fill="currentColor" viewBox="0 0 24 24"><path d="M12 17.5l-2.45 1.83.91-2.92L7.25 13h3.04l.95-3.04L12 13h2.76l-2.21 1.41.91 2.92L12 17.5zm-5 4.5l-2.45 1.83.91-2.92L0.25 18h3.04l.95-3.04L5 18h2.76l-2.21 1.41.91 2.92L5 22zm10 0l-2.45 1.83.91-2.92L10.25 18h3.04l.95-3.04L15 18h2.76l-2.21 1.41.91 2.92L15 22z"></path></svg>
+                            <img class="w-16 h-16 rounded-full mr-4" src="4.jpeg" alt="Client Testimonial">
+                            <div>
+                                <h4 class="font-bold text-lg text-sagevista">Ritika Sharma</h4>
+                                <p class="text-sm text-gray-500">Finance Analyst</p>
+                            </div>
+                        </div>
+                        <p class="italic text-gray-700 leading-relaxed">"Thanks to SageVista, I am now working in a role that matches both my skills and career goals. Truly a life-changing experience."</p>
+                    </div>
+                    <div class="bg-gray-50 p-6 rounded-xl shadow-md border border-gray-200">
+                        <div class="flex items-start mb-4">
+                            <svg class="w-8 h-8 text-sagevista mr-3" fill="currentColor" viewBox="0 0 24 24"><path d="M12 17.5l-2.45 1.83.91-2.92L7.25 13h3.04l.95-3.04L12 13h2.76l-2.21 1.41.91 2.92L12 17.5zm-5 4.5l-2.45 1.83.91-2.92L0.25 18h3.04l.95-3.04L5 18h2.76l-2.21 1.41.91 2.92L5 22zm10 0l-2.45 1.83.91-2.92L10.25 18h3.04l.95-3.04L15 18h2.76l-2.21 1.41.91 2.92L15 22z"></path></svg>
+                            <img class="w-16 h-16 rounded-full mr-4" src="3.jpeg" alt="Client Testimonial">
+                            <div>
+                                <h4 class="font-bold text-lg text-sagevista">Karan Malhotra</h4>
+                                <p class="text-sm text-gray-500">IT Support Engineer</p>
+                            </div>
+                        </div>
+                        <p class="italic text-gray-700 leading-relaxed">"What I liked most about SageVista is their transparency. They guided me step by step and delivered exactly what they promised."</p>
+                    </div>
+                    <div class="bg-gray-50 p-6 rounded-xl shadow-md border border-gray-200">
+                        <div class="flex items-start mb-4">
+                            <svg class="w-8 h-8 text-sagevista mr-3" fill="currentColor" viewBox="0 0 24 24"><path d="M12 17.5l-2.45 1.83.91-2.92L7.25 13h3.04l.95-3.04L12 13h2.76l-2.21 1.41.91 2.92L12 17.5zm-5 4.5l-2.45 1.83.91-2.92L0.25 18h3.04l.95-3.04L5 18h2.76l-2.21 1.41.91 2.92L5 22zm10 0l-2.45 1.83.91-2.92L10.25 18h3.04l.95-3.04L15 18h2.76l-2.21 1.41.91 2.92L15 22z"></path></svg>
+                            <span class="text-4xl mr-4">😎</span>
+                            <div>
+                                <h4 class="font-bold text-lg text-sagevista">Rahul Sharma</h4>
+                                <p class="text-sm text-gray-500">Sr. Software Engineer</p>
+                            </div>
+                        </div>
+                        <p class="italic text-gray-700 leading-relaxed">"SageVista provided incredible career guidance. Their personalized approach helped me land a job that perfectly matches my skills and long-term goals. Highly recommend!"</p>
+                    </div>
+                    <div class="bg-gray-50 p-6 rounded-xl shadow-md border border-gray-200">
+                        <div class="flex items-start mb-4">
+                            <svg class="w-8 h-8 text-sagevista mr-3" fill="currentColor" viewBox="0 0 24 24"><path d="M12 17.5l-2.45 1.83.91-2.92L7.25 13h3.04l.95-3.04L12 13h2.76l-2.21 1.41.91 2.92L12 17.5zm-5 4.5l-2.45 1.83.91-2.92L0.25 18h3.04l.95-3.04L5 18h2.76l-2.21 1.41.91 2.92L5 22zm10 0l-2.45 1.83.91-2.92L10.25 18h3.04l.95-3.04L15 18h2.76l-2.21 1.41.91 2.92L15 22z"></path></svg>
+                            <span class="text-4xl mr-4">🤩</span>
+                            <div>
+                                <h4 class="font-bold text-lg text-sagevista">Priya Singh</h4>
+                                <p class="text-sm text-gray-500">Senior Graphic Designer</p>
+                            </div>
+                        </div>
+                        <p class="italic text-gray-700 leading-relaxed">"I tried several platforms, but none delivered results like SageVista. They connected my profile to the right company, and today I am working in a great position."</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="py-16 bg-[#E3F2FD] border-t-4 border-b-4 border-sagevista">
+            <div class="container mx-auto px-6 max-w-2xl">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-4 text-sagevista">Get in Touch</h2>
+                <p class="text-center text-gray-600 mb-8">Tell us what you need, and we'll guide you to the right path.</p>
+
+                <div class="flex justify-center mb-8 space-x-4">
+                    <button id="job-seeker-btn" class="bg-sagevista text-white px-6 py-3 rounded-full font-semibold shadow-lg hover:bg-[#003366] transition-colors duration-300">
+                        I'm a Job Seeker
+                    </button>
+                    <button id="employer-btn" class="bg-white border-2 border-sagevista text-sagevista px-6 py-3 rounded-full font-semibold hover:bg-[#E3F2FD] transition-colors duration-300">
+                        I'm an Employer
+                    </button>
+                </div>
+
+                <div class="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-8 mb-8">
+                    <a href="tel:+917991692525" class="bg-sagevista text-white px-6 py-3 rounded-full font-semibold shadow-lg hover:bg-[#003366] transition-colors duration-300">
+                        📞 Call Us: +91 7991692525
+                    </a>
+                    <a href="mailto:sagevistaconsulting@gmail.com" class="bg-white border-2 border-sagevista text-sagevista px-6 py-3 rounded-full font-semibold hover:bg-[#E3F2FD] transition-colors duration-300">
+                        ✉️ sagevistaconsulting@gmail.com
+                    </a>
+                </div>
+
+                <form id="job-seeker-form" action="https://formsubmit.co/sagevistaconsulting@gmail.com" method="POST" class="space-y-6 hidden" enctype="multipart/form-data">
+                    <h3 class="text-xl font-bold text-center text-sagevista">Apply for a Job</h3>
+
+                    <div>
+                        <label for="seeker-name" class="block text-sm font-medium text-gray-700">Full Name *</label>
+                        <input type="text" id="seeker-name" name="name" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-sagevista focus:ring focus:ring-sagevista focus:ring-opacity-50 transition-colors duration-300" placeholder="Your name" required />
+                    </div>
+                    <div>
+                        <label for="seeker-email" class="block text-sm font-medium text-gray-700">Email ID *</label>
+                        <input type="email" id="seeker-email" name="email" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-sagevista focus:ring focus:ring-sagevista focus:ring-opacity-50 transition-colors duration-300" placeholder="xyz@gmail.com" required />
+                    </div>
+                    <div>
+                        <label for="seeker-mobile" class="block text-sm font-medium text-gray-700">Mobile Number *</label>
+                        <input type="tel" id="seeker-mobile" name="mobile" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-sagevista focus:ring focus:ring-sagevista focus:ring-opacity-50 transition-colors duration-300" placeholder="e.g., +919876543210" required />
+                    </div>
+                    <div>
+                        <label for="seeker-city" class="block text-sm font-medium text-gray-700">City & State *</label>
+                        <input type="text" id="seeker-city" name="city_state" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-sagevista focus:ring focus:ring-sagevista focus:ring-opacity-50 transition-colors duration-300" placeholder="e.g., New Delhi, Delhi" required />
+                    </div>
+                    <div>
+                        <label for="seeker-age" class="block text-sm font-medium text-gray-700">Age *</label>
+                        <input type="number" id="seeker-age" name="age" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-sagevista focus:ring focus:ring-sagevista focus:ring-opacity-50 transition-colors duration-300" placeholder="e.g., 25" required />
+                    </div>
+                    <div>
+                        <label for="seeker-qualification" class="block text-sm font-medium text-gray-700">Highest Qualification *</label>
+                        <input type="text" id="seeker-qualification" name="qualification" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-sagevista focus:ring focus:ring-sagevista focus:ring-opacity-50 transition-colors duration-300" placeholder="e.g., B.Tech, M.Com" required />
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700">Work Experience *</label>
+                        <div class="mt-2 space-y-2">
+                            <div class="flex items-center">
+                                <input id="exp-fresher" name="experience" type="radio" value="Fresher" class="focus:ring-sagevista h-4 w-4 text-sagevista border-gray-300" required>
+                                <label for="exp-fresher" class="ml-3 block text-sm font-medium text-gray-700">Fresher</label>
+                            </div>
+                            <div class="flex items-center">
+                                <input id="exp-0-6" name="experience" type="radio" value="0-6 months" class="focus:ring-sagevista h-4 w-4 text-sagevista border-gray-300">
+                                <label for="exp-0-6" class="ml-3 block text-sm font-medium text-gray-700">0–6 months</label>
+                            </div>
+                            <div class="flex items-center">
+                                <input id="exp-1-2" name="experience" type="radio" value="1-2 years" class="focus:ring-sagevista h-4 w-4 text-sagevista border-gray-300">
+                                <label for="exp-1-2" class="ml-3 block text-sm font-medium text-gray-700">1–2 years</label>
+                            </div>
+                            <div class="flex items-center">
+                                <input id="exp-2-plus" name="experience" type="radio" value="2+ years" class="focus:ring-sagevista h-4 w-4 text-sagevista border-gray-300">
+                                <label for="exp-2-plus" class="ml-3 block text-sm font-medium text-gray-700">2+ years</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700">Preferred Job Type *</label>
+                        <select id="seeker-job-type" name="job_type" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-sagevista focus:ring focus:ring-sagevista focus:ring-opacity-50 transition-colors duration-300" required>
+                            <option value="">-- Please select --</option>
+                            <option value="Work From Home">Work From Home</option>
+                            <option value="Office-based">Office-based</option>
+                            <option value="BPO">BPO</option>
+                            <option value="Sales">Sales</option>
+                            <option value="IT">IT</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700">Current Job Status *</label>
+                        <div class="mt-2 space-y-2">
+                            <div class="flex items-center">
+                                <input id="status-working" name="job_status" type="radio" value="Working" class="focus:ring-sagevista h-4 w-4 text-sagevista border-gray-300" required>
+                                <label for="status-working" class="ml-3 block text-sm font-medium text-gray-700">Working</label>
+                            </div>
+                            <div class="flex items-center">
+                                <input id="status-not-working" name="job_status" type="radio" value="Not Working" class="focus:ring-sagevista h-4 w-4 text-sagevista border-gray-300">
+                                <label for="status-not-working" class="ml-3 block text-sm font-medium text-gray-700">Not Working</label>
+                            </div>
+                            <div class="flex items-center">
+                                <input id="status-student" name="job_status" type="radio" value="Student" class="focus:ring-sagevista h-4 w-4 text-sagevista border-gray-300">
+                                <label for="status-student" class="ml-3 block text-sm font-medium text-gray-700">Student</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <label for="seeker-resume" class="block text-sm font-medium text-gray-700">Resume Upload *</label>
+                        <input type="file" id="seeker-resume" name="resume" class="mt-1 block w-full text-sm text-gray-500 file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-sagevista file:text-white hover:file:bg-[#003366] transition-colors duration-300" multiple required />
+                        <p class="mt-1 text-xs text-gray-500">Upload up to 5 supported files: PDF, document, or spreadsheet. Max 10 MB per file.</p>
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700">How did you hear about us? *</label>
+                        <div class="mt-2 space-y-2">
+                            <div class="flex items-center">
+                                <input id="source-instagram" name="source" type="radio" value="Instagram" class="focus:ring-sagevista h-4 w-4 text-sagevista border-gray-300" required>
+                                <label for="source-instagram" class="ml-3 block text-sm font-medium text-gray-700">Instagram</label>
+                            </div>
+                            <div class="flex items-center">
+                                <input id="source-facebook" name="source" type="radio" value="Facebook" class="focus:ring-sagevista h-4 w-4 text-sagevista border-gray-300">
+                                <label for="source-facebook" class="ml-3 block text-sm font-medium text-gray-700">Facebook</label>
+                            </div>
+                            <div class="flex items-center">
+                                <input id="source-whatsapp" name="source" type="radio" value="WhatsApp" class="focus:ring-sagevista h-4 w-4 text-sagevista border-gray-300">
+                                <label for="source-whatsapp" class="ml-3 block text-sm font-medium text-gray-700">WhatsApp</label>
+                            </div>
+                            <div class="flex items-center">
+                                <input id="source-friend" name="source" type="radio" value="Friend" class="focus:ring-sagevista h-4 w-4 text-sagevista border-gray-300">
+                                <label for="source-friend" class="ml-3 block text-sm font-medium text-gray-700">Friend</label>
+                            </div>
+                            <div class="flex items-center">
+                                <input id="source-other" name="source" type="radio" value="Other" class="focus:ring-sagevista h-4 w-4 text-sagevista border-gray-300">
+                                <label for="source-other" class="ml-3 block text-sm font-medium text-gray-700">Other</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="w-full bg-sagevista text-white py-3 rounded-md font-semibold hover:bg-[#003366] transition-colors duration-300">
+                        Submit Application
+                    </button>
+                </form>
+
+                <form id="employer-form" action="https://formsubmit.co/sagevistaconsulting@gmail.com" method="POST" class="space-y-6 hidden">
+                    <h3 class="text-xl font-bold text-center text-sagevista">Find Top Talent</h3>
+
+                    <div>
+                        <label for="hiring-manager-name" class="block text-sm font-medium text-gray-700">Hiring Manager Name *</label>
+                        <input type="text" id="hiring-manager-name" name="hiring_manager_name" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-sagevista focus:ring focus:ring-sagevista focus:ring-opacity-50 transition-colors duration-300" placeholder="Hiring Manager Name" required />
+                    </div>
+                    <div>
+                        <label for="employer-email" class="block text-sm font-medium text-gray-700">Official Email *</label>
+                        <input type="email" id="employer-email" name="email" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-sagevista focus:ring focus:ring-sagevista focus:ring-opacity-50 transition-colors duration-300" placeholder="your-email@company.com" required />
+                    </div>
+                    <div>
+                        <label for="company-name" class="block text-sm font-medium text-gray-700">Company Name *</label>
+                        <input type="text" id="company-name" name="company_name" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-sagevista focus:ring focus:ring-sagevista focus:ring-opacity-50 transition-colors duration-300" placeholder="Your company name" required />
+                    </div>
+                    <div>
+                        <label for="company-phone" class="block text-sm font-medium text-gray-700">Company Phone Number *</label>
+                        <input type="tel" id="company-phone" name="company_phone" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-sagevista focus:ring focus:ring-sagevista focus:ring-opacity-50 transition-colors duration-300" placeholder="e.g., +919876543210" required />
+                    </div>
+                    <div>
+                        <label for="company-website" class="block text-sm font-medium text-gray-700">Company Website</label>
+                        <input type="url" id="company-website" name="company_website" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-sagevista focus:ring focus:ring-sagevista focus:ring-opacity-50 transition-colors duration-300" placeholder="e.g., www.yourcompany.com" />
+                    </div>
+
+                    <div>
+                        <label for="hiring-field" class="block text-sm font-medium text-gray-700">Hiring Field *</label>
+                        <select id="hiring-field" name="hiring_field" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-sagevista focus:ring focus:ring-sagevista focus:ring-opacity-50 transition-colors duration-300" required>
+                            <option value="">-- Please select a field --</option>
+                            <option value="IT & Software">IT & Software</option>
+                            <option value="Sales & Marketing">Sales & Marketing</option>
+                            <option value="Finance & Accounting">Finance & Accounting</option>
+                            <option value="BPO / Call Centers">BPO / Call Centers</option>
+                            <option value="Retail / Hospitality">Retail / Hospitality</option>
+                            <option value="Logistics & Delivery">Logistics & Delivery</option>
+                            <option value="Education / Training">Education / Training</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="num-positions" class="block text-sm font-medium text-gray-700">Number of Positions *</label>
+                        <input type="number" id="num-positions" name="num_positions" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-sagevista focus:ring focus:ring-sagevista focus:ring-opacity-50 transition-colors duration-300" placeholder="e.g., 5" required />
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700">Required Experience *</label>
+                        <select id="required-experience" name="required_experience" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-sagevista focus:ring focus:ring-sagevista focus:ring-opacity-50 transition-colors duration-300" required>
+                            <option value="">-- Please select --</option>
+                            <option value="Fresher">Fresher</option>
+                            <option value="0-6 months">0–6 months</option>
+                            <option value="1-2 years">1–2 years</option>
+                            <option value="2+ years">2+ years</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700">Hiring Urgency *</label>
+                        <div class="mt-2 space-y-2">
+                            <div class="flex items-center">
+                                <input id="urgency-immediate" name="hiring_urgency" type="radio" value="Immediate" class="focus:ring-sagevista h-4 w-4 text-sagevista border-gray-300" required>
+                                <label for="urgency-immediate" class="ml-3 block text-sm font-medium text-gray-700">Immediate</label>
+                            </div>
+                            <div class="flex items-center">
+                                <input id="urgency-1-2-weeks" name="hiring_urgency" type="radio" value="1-2 weeks" class="focus:ring-sagevista h-4 w-4 text-sagevista border-gray-300">
+                                <label for="urgency-1-2-weeks" class="ml-3 block text-sm font-medium text-gray-700">1–2 weeks</label>
+                            </div>
+                            <div class="flex items-center">
+                                <input id="urgency-1-plus-month" name="hiring_urgency" type="radio" value="1+ month" class="focus:ring-sagevista h-4 w-4 text-sagevista border-gray-300">
+                                <label for="urgency-1-plus-month" class="ml-3 block text-sm font-medium text-gray-700">1+ month</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700">How did you hear about us? *</label>
+                        <div class="mt-2 space-y-2">
+                            <div class="flex items-center">
+                                <input id="source-instagram-employer" name="source" type="radio" value="Instagram" class="focus:ring-sagevista h-4 w-4 text-sagevista border-gray-300" required>
+                                <label for="source-instagram-employer" class="ml-3 block text-sm font-medium text-gray-700">Instagram</label>
+                            </div>
+                            <div class="flex items-center">
+                                <input id="source-facebook-employer" name="source" type="radio" value="Facebook" class="focus:ring-sagevista h-4 w-4 text-sagevista border-gray-300">
+                                <label for="source-facebook-employer" class="ml-3 block text-sm font-medium text-gray-700">Facebook</label>
+                            </div>
+                            <div class="flex items-center">
+                                <input id="source-whatsapp-employer" name="source" type="radio" value="WhatsApp" class="focus:ring-sagevista h-4 w-4 text-sagevista border-gray-300">
+                                <label for="source-whatsapp-employer" class="ml-3 block text-sm font-medium text-gray-700">WhatsApp</label>
+                            </div>
+                            <div class="flex items-center">
+                                <input id="source-friend-employer" name="source" type="radio" value="Friend" class="focus:ring-sagevista h-4 w-4 text-sagevista border-gray-300">
+                                <label for="source-friend-employer" class="ml-3 block text-sm font-medium text-gray-700">Friend</label>
+                            </div>
+                            <div class="flex items-center">
+                                <input id="source-other-employer" name="source" type="radio" value="Other" class="focus:ring-sagevista h-4 w-4 text-sagevista border-gray-300">
+                                <label for="source-other-employer" class="ml-3 block text-sm font-medium text-gray-700">Other</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="w-full bg-sagevista text-white py-3 rounded-md font-semibold hover:bg-[#003366] transition-colors duration-300">
+                        Request a Consultation
+                    </button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-sagevista text-white py-8 text-center">
+        <div class="container mx-auto px-6">
+            <p class="mb-4">&copy; 2023 SageVista. All Rights Reserved.</p>
+            <div class="flex justify-center space-x-6 text-sm">
+                <a href="privacy.html" target="_blank" class="hover:underline">Privacy Policy</a>
+                <a href="terms.html" target="_blank" class="hover:underline">Terms of Service</a>
+                <a href="cookies.html" target="_blank" class="hover:underline">Cookies Policy</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const navMenu = document.getElementById('nav-menu');
+        const jobSeekerBtn = document.getElementById('job-seeker-btn');
+        const employerBtn = document.getElementById('employer-btn');
+        const jobSeekerForm = document.getElementById('job-seeker-form');
+        const employerForm = document.getElementById('employer-form');
+
+        menuBtn.addEventListener('click', () => {
+            navMenu.classList.toggle('hidden');
+            navMenu.classList.toggle('flex');
+            navMenu.classList.toggle('absolute');
+            navMenu.classList.toggle('bg-white');
+            navMenu.classList.toggle('shadow-lg');
+            navMenu.classList.toggle('inset-x-0');
+            navMenu.classList.toggle('top-16');
+            navMenu.classList.toggle('p-4');
+            navMenu.classList.toggle('rounded-lg');
+            navMenu.classList.toggle('flex-col');
+        });
+
+        // Toggle contact forms
+        jobSeekerBtn.addEventListener('click', () => {
+            jobSeekerForm.classList.remove('hidden');
+            employerForm.classList.add('hidden');
+            jobSeekerBtn.classList.remove('bg-white', 'text-sagevista');
+            jobSeekerBtn.classList.add('bg-sagevista', 'text-white');
+            employerBtn.classList.remove('bg-sagevista', 'text-white');
+            employerBtn.classList.add('bg-white', 'text-sagevista');
+        });
+
+        employerBtn.addEventListener('click', () => {
+            employerForm.classList.remove('hidden');
+            jobSeekerForm.classList.add('hidden');
+            employerBtn.classList.remove('bg-white', 'text-sagevista');
+            employerBtn.classList.add('bg-sagevista', 'text-white');
+            jobSeekerBtn.classList.remove('bg-sagevista', 'text-white');
+            jobSeekerBtn.classList.add('bg-white', 'text-sagevista');
+        });
+
+        // Auto-show job seeker form on job opportunity click
+        const jobLinks = document.querySelectorAll('.job-category-link');
+        jobLinks.forEach(link => {
+            link.addEventListener('click', (event) => {
+                event.preventDefault();
+                const fieldName = link.querySelector('h3').innerText;
+                const fieldSelect = document.getElementById('seeker-field');
+                fieldSelect.value = fieldName;
+                jobSeekerForm.classList.remove('hidden');
+                employerForm.classList.add('hidden');
+                jobSeekerBtn.classList.remove('bg-white', 'text-sagevista');
+                jobSeekerBtn.classList.add('bg-sagevista', 'text-white');
+                employerBtn.classList.remove('bg-sagevista', 'text-white');
+                employerBtn.classList.add('bg-white', 'text-sagevista');
+                document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+    </script>
+
+</body>
+</html>
