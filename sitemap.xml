@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Home Page -->
+  <url>
+    <loc>https://www.sagevista.info/</loc>
+    <lastmod>2025-09-22</lastmod>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- About Page -->
+  <url>
+    <loc>https://www.sagevista.info/about</loc>
+    <lastmod>2025-09-22</lastmod>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Services Page -->
+  <url>
+    <loc>https://www.sagevista.info/services</loc>
+    <lastmod>2025-09-22</lastmod>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Apply Now Page -->
+  <url>
+    <loc>https://www.sagevista.info/apply</loc>
+    <lastmod>2025-09-22</lastmod>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Contact Page -->
+  <url>
+    <loc>https://www.sagevista.info/contact</loc>
+    <lastmod>2025-09-22</lastmod>
+    <priority>0.8</priority>
+  </url>
+
+</urlset>
